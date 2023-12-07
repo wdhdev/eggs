@@ -1,0 +1,35 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2023-12-07T14:11:15+08:00",
+    "name": "p2p Screensharing",
+    "author": "admin@williamharrison.xyz",
+    "description": null,
+    "features": null,
+    "docker_images": {
+        "Node.js 20": "ghcr.io\/parkervcp\/yolks:nodejs_20",
+        "Node.js 19": "ghcr.io\/parkervcp\/yolks:nodejs_19",
+        "Node.js 18": "ghcr.io\/parkervcp\/yolks:nodejs_18",
+        "Node.js 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "Node.js 16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
+    },
+    "file_denylist": [],
+    "startup": "npm run dev -- --port {{SERVER_PORT}} --host",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git\r\n\r\n# Update npm\r\nnpm install npm@latest -g\r\n\r\nmkdir -p \/mnt\/server\r\ncd \/mnt\/server\r\n\r\n# Remove existing files, if any\r\nrm -rf .\/**\r\n\r\n# Clone repository\r\ngit clone https:\/\/github.com\/WilliamDavidHarrison\/p2p-screensharing.git\r\ncd p2p-screensharing\r\n\r\n# Move files\r\nmv ** ..\/\r\ncd ..\r\nrm -rf p2p-screensharing\/\r\n\r\n# Install dependencies\r\nnpm install\r\n\r\nexit 0",
+            "container": "node:20-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
