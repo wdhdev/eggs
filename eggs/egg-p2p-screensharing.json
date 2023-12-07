@@ -4,10 +4,10 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2023-12-07T14:11:15+08:00",
+    "exported_at": "2023-12-07T14:19:49+08:00",
     "name": "p2p Screensharing",
     "author": "admin@williamharrison.xyz",
-    "description": null,
+    "description": "Chat and screenshare peer-to-peer, without a server, no account needed.",
     "features": null,
     "docker_images": {
         "Node.js 20": "ghcr.io\/parkervcp\/yolks:nodejs_20",
