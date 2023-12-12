@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2023-12-07T14:19:49+08:00",
+    "exported_at": "2023-12-12T14:53:11+08:00",
     "name": "p2p Screensharing",
     "author": "admin@williamharrison.xyz",
     "description": "Chat and screenshare peer-to-peer, without a server, no account needed.",
@@ -26,7 +26,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git\r\n\r\n# Update npm\r\nnpm install npm@latest -g\r\n\r\nmkdir -p \/mnt\/server\r\ncd \/mnt\/server\r\n\r\n# Remove existing files, if any\r\nrm -rf .\/**\r\n\r\n# Clone repository\r\ngit clone https:\/\/github.com\/WilliamDavidHarrison\/p2p-screensharing.git\r\ncd p2p-screensharing\r\n\r\n# Move files\r\nmv ** ..\/\r\ncd ..\r\nrm -rf p2p-screensharing\/\r\n\r\n# Install dependencies\r\nnpm install\r\n\r\nexit 0",
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git\r\n\r\nmkdir -p \/mnt\/server\r\ncd \/mnt\/server\r\n\r\n# Remove existing files, if any\r\nrm -rf **\r\n\r\n# Clone repository\r\necho -e \"Cloning repository\"\r\ngit clone https:\/\/github.com\/WilliamDavidHarrison\/p2p-screensharing\r\n\r\n# Move files\r\ncd p2p-screensharing\r\nmv * ..\/\r\ncd ..\r\nrm -rf p2p-screensharing\r\n\r\n# Install dependencies\r\necho -e \"Installing dependencies\"\r\n\r\n\/usr\/local\/bin\/npm install\r\n\r\necho -e \"Install complete\"\r\nexit 0",
             "container": "node:20-slim",
             "entrypoint": "bash"
         }
