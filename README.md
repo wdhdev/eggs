@@ -3,4 +3,4 @@ Custom made eggs for use with [Pterodactyl](https://pterodactyl.io).
 
 ## 🥚 Eggs
 - **[p2p-screensharing](https://github.com/wdhdev/pterodactyl-eggs/blob/main/eggs/egg-p2p-screensharing.json)**: Chat and screenshare peer-to-peer, without a server, no account needed.
-  - **GitHub**: [WilliamDavidHarrison/p2p-screensharing](https://github.com/WilliamDavidHarrison/p2p-screensharing)
+  - **GitHub**: [wdhdev/p2p-screensharing](https://github.com/wdhdev/p2p-screensharing)
