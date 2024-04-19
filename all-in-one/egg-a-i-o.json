@@ -1,0 +1,42 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2024-04-19T19:00:58+08:00",
+    "name": "AIO",
+    "author": "william@williamharrison.dev",
+    "description": "- Node.js 21 LTS (including nodemon, pm2, pnpm, ts-node, tsc, yarn)\r\n- Python 3.12\r\n- OpenJDK 21 LTS\r\n- Golang\r\n- .NET Core Runtime and SDK\r\n- Puppeteer Support",
+    "features": null,
+    "docker_images": {
+        "ghcr.io\/wdhdev\/yolks:aio": "ghcr.io\/wdhdev\/yolks:aio"
+    },
+    "file_denylist": [],
+    "startup": "{{STARTUP_CMD}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": null,
+            "container": "alpine:3.4",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Startup Command",
+            "description": "The startup command for your server to use.",
+            "env_variable": "STARTUP_CMD",
+            "default_value": "bash",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required",
+            "field_type": "text"
+        }
+    ]
+}
