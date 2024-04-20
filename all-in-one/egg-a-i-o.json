@@ -4,10 +4,10 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2024-04-20T07:48:35+08:00",
+    "exported_at": "2024-04-20T09:40:04+08:00",
     "name": "AIO",
     "author": "william@williamharrison.dev",
-    "description": "- Node.js 21 LTS (including nodemon, pm2, pnpm, ts-node, tsc, yarn)\r\n- Python 3.12\r\n- OpenJDK 21 LTS\r\n- Golang\r\n- .NET Core Runtime and SDK\r\n- Puppeteer Support",
+    "description": "An all-in-one egg with support for multiple programming languages.",
     "features": null,
     "docker_images": {
         "williamharrison\/aio": "williamharrison\/aio"
