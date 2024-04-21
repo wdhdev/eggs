@@ -4,18 +4,13 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2024-03-11T19:21:39+08:00",
+    "exported_at": "2024-04-21T09:05:01+08:00",
     "name": "p2p Screensharing",
     "author": "william@williamharrison.dev",
     "description": "Chat and screenshare peer-to-peer, without a server, no account needed.",
     "features": null,
     "docker_images": {
-        "Node.js 21": "ghcr.io\/parkervcp\/yolks:nodejs_21",
-        "Node.js 20": "ghcr.io\/parkervcp\/yolks:nodejs_20",
-        "Node.js 19": "ghcr.io\/parkervcp\/yolks:nodejs_19",
-        "Node.js 18": "ghcr.io\/parkervcp\/yolks:nodejs_18",
-        "Node.js 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
-        "Node.js 16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
+        "Node.js 20": "ghcr.io\/parkervcp\/yolks:nodejs_20"
     },
     "file_denylist": [],
     "startup": "npm run dev -- --port {{SERVER_PORT}} --host",
