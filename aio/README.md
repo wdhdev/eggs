@@ -1,7 +1,10 @@
 # All-in-one
 An all-in-one egg with support for multiple programming languages.
 
-- Popular APT packages (neofetch, speedtest-cli)
+- APT packages
+  - dnsutils
+  - neofetch
+  - speedtest-cli
 - Node.js Latest LTS
   - Bun Latest
   - NVM Latest
