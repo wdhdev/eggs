@@ -19,3 +19,4 @@ An all-in-one egg with support for multiple programming languages.
 - Golang
 - .NET Core Runtime and SDK
 - Puppeteer Support
+- Fastfetch
