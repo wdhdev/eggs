@@ -1,10 +1,6 @@
 # All-in-one
 An all-in-one egg with support for multiple programming languages.
 
-- APT packages
-  - dnsutils
-  - neofetch
-  - speedtest-cli
 - Node.js Latest LTS
   - Bun Latest
   - NVM Latest
@@ -20,3 +16,6 @@ An all-in-one egg with support for multiple programming languages.
 - .NET Core Runtime and SDK
 - Puppeteer Support
 - Fastfetch
+- Utility Software
+  - neofetch
+  - speedtest-cli
