@@ -1,5 +1,5 @@
 # All-in-one
-An all-in-one image with support for multiple programming languages, built for use with Pterodactyl.
+An all-in-one egg with support for multiple programming languages.
 
 - Node.js Latest LTS
   - Bun Latest
