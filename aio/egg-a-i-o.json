@@ -6,7 +6,7 @@
     },
     "exported_at": "2024-10-09T11:58:18+08:00",
     "name": "AIO",
-    "author": "william@williamharrison.dev",
+    "author": "will@hrsn.dev",
     "description": "An all-in-one egg with support for multiple programming languages.",
     "features": null,
     "docker_images": {
